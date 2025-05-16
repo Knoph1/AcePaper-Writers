@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 174 75% 24%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 24 95% 53%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 174 75% 24%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 24 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Improve form elements across browsers */
+  input,
+  textarea,
+  select,
+  button {
+    @apply text-base;
+    font-family: inherit;
+  }
+
+  /* Improve touch targets on mobile */
+  @media (max-width: 640px) {
+    button,
+    a,
+    input[type="checkbox"],
+    input[type="radio"] {
+      @apply min-h-10 min-w-10;
+    }
+  }
+
+  /* Smooth scrolling for all browsers */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Fix iOS tap highlight */
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Improve focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Responsive typography */
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-base md:text-lg;
+  }
+}
+
+/* Fix for iOS momentum scrolling */
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
+
+/* Dark mode improvements */
+.dark .prose {
+  --tw-prose-body: theme("colors.gray.300");
+  --tw-prose-headings: theme("colors.white");
+  --tw-prose-lead: theme("colors.gray.300");
+  --tw-prose-links: theme("colors.orange.400");
+  --tw-prose-bold: theme("colors.white");
+  --tw-prose-counters: theme("colors.gray.400");
+  --tw-prose-bullets: theme("colors.gray.400");
+  --tw-prose-hr: theme("colors.gray.700");
+  --tw-prose-quotes: theme("colors.gray.300");
+  --tw-prose-quote-borders: theme("colors.gray.700");
+  --tw-prose-captions: theme("colors.gray.400");
+  --tw-prose-code: theme("colors.white");
+  --tw-prose-pre-code: theme("colors.gray.300");
+  --tw-prose-pre-bg: theme("colors.gray.800");
+  --tw-prose-th-borders: theme("colors.gray.700");
+  --tw-prose-td-borders: theme("colors.gray.700");
+}
+
+.dark .from-white {
+  --tw-gradient-from: theme("colors.gray.900");
+}
+
+.dark .to-gray-50 {
+  --tw-gradient-to: theme("colors.gray.800");
+}
+
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .bg-gray-50 {
+  @apply bg-gray-900;
+}
+
+.dark .bg-gray-100 {
+  @apply bg-gray-800;
+}
+
+.dark .border {
+  @apply border-gray-700;
+}
+
+.dark .text-gray-500 {
+  @apply text-gray-400;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-800 {
+  @apply text-gray-200;
+}
+
+.dark .shadow-sm {
+  @apply shadow-gray-800;
+}
+
+.dark .bg-orange-50\/50 {
+  @apply bg-orange-900/20;
+}
+
+.dark .bg-orange-100 {
+  @apply bg-orange-900/30;
+}
+
+.dark .bg-teal-100 {
+  @apply bg-teal-900/30;
+}
+
+.dark .bg-purple-100 {
+  @apply bg-purple-900/30;
+}
+
+.dark .bg-yellow-100 {
+  @apply bg-yellow-900/30;
+}
+
+.dark .bg-green-100 {
+  @apply bg-green-900/30;
+}
+
+.dark .bg-blue-100 {
+  @apply bg-blue-900/30;
+}
+
+.dark .text-yellow-800 {
+  @apply text-yellow-300;
+}
+
+.dark .text-green-800 {
+  @apply text-green-300;
+}
+
+.dark .text-blue-800 {
+  @apply text-blue-300;
+}
+
+.dark .text-purple-700 {
+  @apply text-purple-300;
+}
+
+.dark .text-teal-700 {
+  @apply text-teal-300;
+}
+
+.dark .border-orange-200 {
+  @apply border-orange-800;
+}
