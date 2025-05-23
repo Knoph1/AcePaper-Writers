@@ -61,7 +61,16 @@ export function MobileMenu({ links }: MobileMenuProps) {
         )}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8 p-4">
-          <Image src="/logo.png" alt="AcePaper Writers Logo" width={50} height={50} className="w-12 h-12" />
+          <div className="flex items-center gap-2">
+            <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+            <div className="flex flex-col text-center">
+              <span className="text-lg font-bold leading-tight">
+                <span className="text-orange-500">AcePaper</span>
+                <span className="text-teal-900">Writers</span>
+              </span>
+              <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+            </div>
+          </div>
           {links.map((link) => (
             <Link
               key={link.href}

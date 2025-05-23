@@ -20,6 +20,7 @@ const navLinks = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "How It Works" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/contact", label: "Contact" },
 ]
 
 export default function Home() {
@@ -43,7 +44,7 @@ export default function Home() {
               "@type": "ContactPoint",
               telephone: "+254701738794",
               contactType: "customer service",
-              email: "contact@acepaper-writers.com",
+              email: "writerchen95@gmail.com",
               availableLanguage: ["English"],
             },
             description:
@@ -58,15 +59,18 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="AcePaper Writers Logo"
-                width={64}
-                height={64}
-                className="w-12 h-12 sm:w-16 sm:h-16"
+                width={80}
+                height={80}
+                className="w-14 h-14 sm:w-16 sm:h-16"
                 priority
               />
-              <span className="text-lg sm:text-xl font-bold">
-                <span className="text-orange-500">AcePaper</span>
-                <span className="text-teal-900">Writers</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-lg sm:text-xl font-bold leading-tight">
+                  <span className="text-orange-500">AcePaper</span>
+                  <span className="text-teal-900">Writers</span>
+                </span>
+                <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+              </div>
             </div>
 
             <nav className="hidden md:flex items-center gap-6">
@@ -156,31 +160,38 @@ export default function Home() {
           <section id="how-it-works" className="py-12 sm:py-16 md:py-20 bg-gray-50 scroll-mt-20">
             <ResponsiveContainer>
               <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">How It Works</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
                 <div className="text-center">
                   <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     1
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Assess the Website</h3>
+                  <p className="text-gray-600">Navigate to Order Placement</p>
+                </div>
+                <div className="text-center">
+                  <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    2
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Create an Order</h3>
                   <p className="text-gray-600">Specify your requirements, upload references, and set your deadline.</p>
                 </div>
                 <div className="text-center">
                   <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                    2
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Select a Writer</h3>
-                  <p className="text-gray-600">Choose from qualified writers who bid on your project.</p>
-                </div>
-                <div className="text-center">
-                  <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     3
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Track Progress</h3>
-                  <p className="text-gray-600">Communicate directly with your writer and monitor the work.</p>
+                  <h3 className="text-xl font-semibold mb-2">Confirm Order Details</h3>
+                  <p className="text-gray-600">Make relevant order payment</p>
                 </div>
                 <div className="text-center">
                   <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     4
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Track Progress</h3>
+                  <p className="text-gray-600">You'll get process status & follow-up via email</p>
+                </div>
+                <div className="text-center">
+                  <div className="h-16 w-16 bg-teal-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    5
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Receive & Review</h3>
                   <p className="text-gray-600">Get your completed work and request revisions if needed.</p>
@@ -192,9 +203,10 @@ export default function Home() {
           {/* CTA Section */}
           <section className="py-12 sm:py-16 md:py-20 bg-teal-900 text-white">
             <ResponsiveContainer className="text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Ready to Get Started?</h2>
-              <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto">
-                Join thousands of satisfied clients and writers on our platform.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Ready to Experience Excellence?</h2>
+              <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto">
+                Join thousands of satisfied clients and discover why AcePaper Writers is the trusted choice for academic
+                success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/order">
@@ -206,7 +218,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto border-white text-white hover:bg-white/10"
+                    className="w-full sm:w-auto border-2 border-white bg-white text-teal-900 font-semibold hover:text-white hover:bg-teal-800 transition-all duration-300 transform hover:scale-105"
                   >
                     View Pricing
                   </Button>
@@ -221,11 +233,14 @@ export default function Home() {
             <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Image src="/logo.png" alt="AcePaper Writers Logo" width={50} height={50} className="w-12 h-12" />
-                  <span className="text-lg font-bold">
-                    <span className="text-orange-500">AcePaper</span>
-                    <span className="text-teal-900">Writers</span>
-                  </span>
+                  <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+                  <div className="flex flex-col">
+                    <span className="text-lg font-bold leading-tight">
+                      <span className="text-orange-500">AcePaper</span>
+                      <span className="text-teal-900">Writers</span>
+                    </span>
+                    <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+                  </div>
                 </div>
                 <p className="text-gray-600 text-sm">Professional academic and business writing services.</p>
               </div>
@@ -250,6 +265,11 @@ export default function Home() {
                   <li>
                     <Link href="/pricing" className="text-gray-600 hover:text-orange-500 text-sm">
                       Pricing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-gray-600 hover:text-orange-500 text-sm">
+                      Contact
                     </Link>
                   </li>
                 </ul>
@@ -282,7 +302,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold mb-4">Contact</h3>
                 <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm">contact@acepaper-writers.com</li>
+                  <li className="text-gray-600 text-sm">writerchen95@gmail.com</li>
                   <li className="text-gray-600 text-sm">+254701738794</li>
                 </ul>
               </div>

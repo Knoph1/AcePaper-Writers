@@ -19,7 +19,13 @@ export function DashboardHeader() {
     <header className="bg-white border-b px-4 py-3 flex items-center justify-between">
       <div className="flex-1 md:flex-initial flex items-center">
         <Image src="/logo.png" alt="AcePaper Writers Logo" width={50} height={50} className="w-12 h-12 mr-2" />
-        <h1 className="text-xl font-semibold text-teal-900">Dashboard</h1>
+        <div className="flex flex-col">
+          <span className="text-lg font-bold leading-tight">
+            <span className="text-orange-500">AcePaper</span>
+            <span className="text-teal-900">Writers</span>
+          </span>
+          <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+        </div>
       </div>
 
       <div className="hidden md:flex items-center flex-1 mx-4">
