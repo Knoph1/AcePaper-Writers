@@ -83,17 +83,7 @@ export default function Home() {
 
             <div className="flex items-center gap-2 sm:gap-4">
               <ThemeToggle />
-              <Link href="/login" className="hidden sm:inline-flex">
-                <Button variant="outline" size="sm" className="h-9">
-                  Log In
-                </Button>
-              </Link>
-              <Link href="/signup">
-                <Button size="sm" className="h-9">
-                  Sign Up
-                </Button>
-              </Link>
-              <MobileMenu links={[...navLinks, { href: "/login", label: "Log In" }]} />
+              <MobileMenu links={navLinks} />
             </div>
           </ResponsiveContainer>
         </header>
@@ -109,15 +99,10 @@ export default function Home() {
                 Connect with professional writers for high-quality academic and business content. Streamlined process,
                 secure payments, and exceptional results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/signup?role=client">
+              <div className="flex justify-center">
+                <Link href="/order">
                   <Button size="lg" className="w-full sm:w-auto">
-                    Hire a Writer <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link href="/signup?role=writer">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                    Join as a Writer
+                    Place an Order <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -212,9 +197,9 @@ export default function Home() {
                 Join thousands of satisfied clients and writers on our platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/signup?role=client">
+                <Link href="/order">
                   <Button size="lg" className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600">
-                    Create an Account
+                    Place an Order
                   </Button>
                 </Link>
                 <Link href="/pricing">

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://acepaper-writers.com"),
+  metadataBase: new URL("https://www.acepaper-writers.com"),
   alternates: {
     canonical: "/",
     languages: {
