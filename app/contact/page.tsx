@@ -56,9 +56,9 @@ export default function ContactPage() {
                 <div className="flex flex-col">
                   <span className="text-lg sm:text-xl font-bold leading-tight">
                     <span className="text-orange-500">AcePaper</span>
-                    <span className="text-teal-900">Writers</span>
+                    <span className="text-teal-900 dark:text-teal-500">Writers</span>
                   </span>
-                  <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">
+                  <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium leading-tight">
                     We Write. You Excel.
                   </span>
                 </div>
@@ -88,13 +88,13 @@ export default function ContactPage() {
 
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="py-12 sm:py-16 bg-gradient-to-br from-teal-50 via-orange-50 to-white">
+          <section className="py-12 sm:py-16 bg-gradient-to-br from-teal-50 via-orange-50 to-white dark:from-teal-950 dark:via-gray-900 dark:to-gray-950">
             <ResponsiveContainer className="text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-                <span className="text-teal-900">Get in Touch</span> with{" "}
+                <span className="text-teal-900 dark:text-teal-400">Get in Touch</span> with{" "}
                 <span className="text-orange-500">Our Expert Team</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
                 Have questions about our services? Need a custom quote? Our dedicated support team is here to help you
                 achieve academic excellence.
               </p>
@@ -105,55 +105,55 @@ export default function ContactPage() {
           <section className="py-12 sm:py-16">
             <ResponsiveContainer>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <Card className="text-center hover:shadow-lg transition-all duration-300 border-orange-200 bg-gradient-to-br from-orange-50 to-orange-100">
+                <Card className="text-center hover:shadow-lg transition-all duration-300 border-orange-200 dark:border-orange-900 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900/30">
                   <CardHeader>
                     <div className="h-16 w-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Mail className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-teal-900">Email Us</CardTitle>
+                    <CardTitle className="text-teal-900 dark:text-teal-400">Email Us</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-medium">writerchen95@gmail.com</p>
-                    <p className="text-sm text-gray-600 mt-2">We respond within 10 minutes</p>
+                    <p className="text-gray-700 dark:text-gray-300 font-medium">writerchen95@gmail.com</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">We respond within 10 minutes</p>
                   </CardContent>
                 </Card>
 
-                <Card className="text-center hover:shadow-lg transition-all duration-300 border-teal-200 bg-gradient-to-br from-teal-50 to-teal-100">
+                <Card className="text-center hover:shadow-lg transition-all duration-300 border-teal-200 dark:border-teal-900 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950 dark:to-teal-900/30">
                   <CardHeader>
                     <div className="h-16 w-16 bg-teal-700 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Phone className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-teal-900">Call Us</CardTitle>
+                    <CardTitle className="text-teal-900 dark:text-teal-400">Call Us</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-medium">+254701738794</p>
-                    <p className="text-sm text-gray-600 mt-2">24/7 Support Available</p>
+                    <p className="text-gray-700 dark:text-gray-300 font-medium">+254701738794</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">24/7 Support Available</p>
                   </CardContent>
                 </Card>
 
-                <Card className="text-center hover:shadow-lg transition-all duration-300 border-green-200 bg-gradient-to-br from-green-50 to-green-100">
+                <Card className="text-center hover:shadow-lg transition-all duration-300 border-green-200 dark:border-green-900 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900/30">
                   <CardHeader>
                     <div className="h-16 w-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Clock className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-teal-900">Response Time</CardTitle>
+                    <CardTitle className="text-teal-900 dark:text-teal-400">Response Time</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-medium">Within 2 Hours</p>
-                    <p className="text-sm text-gray-600 mt-2">Average response time</p>
+                    <p className="text-gray-700 dark:text-gray-300 font-medium">Within 10 minutes</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">Average response time</p>
                   </CardContent>
                 </Card>
 
-                <Card className="text-center hover:shadow-lg transition-all duration-300 border-purple-200 bg-gradient-to-br from-purple-50 to-purple-100">
+                <Card className="text-center hover:shadow-lg transition-all duration-300 border-purple-200 dark:border-purple-900 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900/30">
                   <CardHeader>
                     <div className="h-16 w-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                       <MessageSquare className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-teal-900">Live Chat</CardTitle>
+                    <CardTitle className="text-teal-900 dark:text-teal-400">Live Chat</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-medium">Available 24/7</p>
-                    <p className="text-sm text-gray-600 mt-2">Instant support</p>
+                    <p className="text-gray-700 dark:text-gray-300 font-medium">Available 24/7</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">Instant support</p>
                   </CardContent>
                 </Card>
               </div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
           </section>
 
           {/* Contact Form Section */}
-          <section className="py-12 sm:py-16 bg-gray-50">
+          <section className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-900">
             <ResponsiveContainer>
               <div className="grid lg:grid-cols-2 gap-12 items-start">
                 {/* Contact Form */}
@@ -179,7 +179,7 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="firstName" className="text-teal-900 font-medium">
+                          <Label htmlFor="firstName" className="text-teal-900 dark:text-teal-400 font-medium">
                             First Name *
                           </Label>
                           <Input
@@ -191,7 +191,7 @@ export default function ContactPage() {
                           />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="lastName" className="text-teal-900 font-medium">
+                          <Label htmlFor="lastName" className="text-teal-900 dark:text-teal-400 font-medium">
                             Last Name *
                           </Label>
                           <Input
@@ -205,7 +205,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="email" className="text-teal-900 font-medium">
+                        <Label htmlFor="email" className="text-teal-900 dark:text-teal-400 font-medium">
                           Email Address *
                         </Label>
                         <Input
@@ -219,7 +219,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-teal-900 font-medium">
+                        <Label htmlFor="phone" className="text-teal-900 dark:text-teal-400 font-medium">
                           Phone Number
                         </Label>
                         <Input
@@ -232,7 +232,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="subject" className="text-teal-900 font-medium">
+                        <Label htmlFor="subject" className="text-teal-900 dark:text-teal-400 font-medium">
                           Subject *
                         </Label>
                         <Select name="subject" required>
@@ -251,7 +251,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message" className="text-teal-900 font-medium">
+                        <Label htmlFor="message" className="text-teal-900 dark:text-teal-400 font-medium">
                           Message *
                         </Label>
                         <Textarea
@@ -288,8 +288,10 @@ export default function ContactPage() {
                 {/* Why Choose Us */}
                 <div className="space-y-8">
                   <div>
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-teal-900">Why Choose AcePaper Writers?</h2>
-                    <p className="text-gray-600 mb-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-teal-900 dark:text-teal-400">
+                      Why Choose AcePaper Writers?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mb-8">
                       We're committed to providing exceptional academic writing services with unmatched quality and
                       support.
                     </p>
@@ -297,12 +299,12 @@ export default function ContactPage() {
 
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="h-12 w-12 bg-orange-100 dark:bg-orange-900/50 rounded-full flex items-center justify-center flex-shrink-0">
                         <Users className="h-6 w-6 text-orange-500" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-teal-900 mb-2">Expert Writers</h3>
-                        <p className="text-gray-600">
+                        <h3 className="text-lg font-semibold text-teal-900 dark:text-teal-400 mb-2">Expert Writers</h3>
+                        <p className="text-gray-600 dark:text-gray-300">
                           Our team consists of qualified professionals with advanced degrees and years of experience in
                           academic writing.
                         </p>
@@ -310,12 +312,14 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Award className="h-6 w-6 text-teal-700" />
+                      <div className="h-12 w-12 bg-teal-100 dark:bg-teal-900/50 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Award className="h-6 w-6 text-teal-700 dark:text-teal-400" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-teal-900 mb-2">Quality Guarantee</h3>
-                        <p className="text-gray-600">
+                        <h3 className="text-lg font-semibold text-teal-900 dark:text-teal-400 mb-2">
+                          Quality Guarantee
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-300">
                           We guarantee 100% original, plagiarism-free content with perfect grammar and timely delivery
                           for every order.
                         </p>
@@ -323,12 +327,12 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <MessageSquare className="h-6 w-6 text-green-600" />
+                      <div className="h-12 w-12 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center flex-shrink-0">
+                        <MessageSquare className="h-6 w-6 text-green-600 dark:text-green-400" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-teal-900 mb-2">24/7 Support</h3>
-                        <p className="text-gray-600">
+                        <h3 className="text-lg font-semibold text-teal-900 dark:text-teal-400 mb-2">24/7 Support</h3>
+                        <p className="text-gray-600 dark:text-gray-300">
                           Our customer support team is available round the clock to assist you with any questions or
                           concerns.
                         </p>
@@ -356,7 +360,7 @@ export default function ContactPage() {
           </section>
         </main>
 
-        <footer className="bg-gray-100 py-8 sm:py-12">
+        <footer className="bg-gray-100 dark:bg-gray-900 py-8 sm:py-12">
           <ResponsiveContainer>
             <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               <div>
@@ -367,77 +371,84 @@ export default function ContactPage() {
                   <div className="flex flex-col">
                     <span className="text-lg font-bold leading-tight">
                       <span className="text-orange-500">AcePaper</span>
-                      <span className="text-teal-900">Writers</span>
+                      <span className="text-teal-900 dark:text-teal-500">Writers</span>
                     </span>
-                    <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+                    <span className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-tight">
+                      We Write. You Excel.
+                    </span>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">Professional academic and business writing services.</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Professional academic and business writing services.
+                </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-4 text-teal-900">Quick Links</h3>
+                <h3 className="font-semibold mb-4 text-teal-900 dark:text-teal-400">Quick Links</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/features" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/features" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Features
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#how-it-works" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link
+                      href="/#how-it-works"
+                      className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm"
+                    >
                       How It Works
                     </Link>
                   </li>
                   <li>
-                    <Link href="/pricing" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/pricing" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Pricing
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/contact" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Contact
                     </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-4 text-teal-900">Legal</h3>
+                <h3 className="font-semibold mb-4 text-teal-900 dark:text-teal-400">Legal</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/terms" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/terms" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Terms of Service
                     </Link>
                   </li>
                   <li>
-                    <Link href="/privacy" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/refund" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/refund" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Refund Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/copyright" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="/copyright" className="text-gray-600 dark:text-gray-400 hover:text-orange-500 text-sm">
                       Copyright Policy
                     </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-4 text-teal-900">Contact</h3>
+                <h3 className="font-semibold mb-4 text-teal-900 dark:text-teal-400">Contact</h3>
                 <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm">writerchen95@gmail.com</li>
-                  <li className="text-gray-600 text-sm">+254701738794</li>
+                  <li className="text-gray-600 dark:text-gray-400 text-sm">writerchen95@gmail.com</li>
+                  <li className="text-gray-600 dark:text-gray-400 text-sm">+254701738794</li>
                 </ul>
               </div>
             </div>
-            <div className="border-t mt-8 pt-8 text-center text-gray-600 text-sm">
+            <div className="border-t mt-8 pt-8 text-center text-gray-600 dark:text-gray-400 text-sm">
               &copy; {new Date().getFullYear()} AcePaper Writers. All rights reserved.
             </div>
           </ResponsiveContainer>

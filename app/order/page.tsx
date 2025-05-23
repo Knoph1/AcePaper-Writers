@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
+// import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -159,20 +159,17 @@ export default function OrderPage() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <ResponsiveContainer className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/logo.png"
-              alt="AcePaper Writers Logo"
-              width={64}
-              height={64}
-              className="w-12 h-12 sm:w-16 sm:h-16"
-              priority
-            />
+            <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-orange-500 to-teal-600">
+              <span className="text-white font-bold text-xl">AW</span>
+            </div>
             <div className="flex flex-col">
               <span className="text-lg sm:text-xl font-bold leading-tight">
                 <span className="text-orange-500">AcePaper</span>
-                <span className="text-teal-900">Writers</span>
+                <span className="text-teal-900 dark:text-teal-500">Writers</span>
               </span>
-              <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium leading-tight">
+                We Write. You Excel.
+              </span>
             </div>
           </Link>
 
@@ -588,13 +585,17 @@ export default function OrderPage() {
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-teal-600">
+                  <span className="text-white font-bold text-xl">AW</span>
+                </div>
                 <div className="flex flex-col">
                   <span className="text-lg font-bold leading-tight">
                     <span className="text-orange-500">AcePaper</span>
-                    <span className="text-teal-900">Writers</span>
+                    <span className="text-teal-900 dark:text-teal-500">Writers</span>
                   </span>
-                  <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+                  <span className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-tight">
+                    We Write. You Excel.
+                  </span>
                 </div>
               </div>
               <p className="text-gray-600 text-sm">Professional academic and business writing services.</p>

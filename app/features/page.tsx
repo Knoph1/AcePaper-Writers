@@ -1,5 +1,8 @@
+import { TooltipContent } from "@/components/ui/tooltip"
+import { TooltipTrigger } from "@/components/ui/tooltip"
+import { Tooltip } from "@/components/ui/tooltip"
+import { TooltipProvider } from "@/components/ui/tooltip"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   ArrowRight,
@@ -94,20 +97,19 @@ export default function FeaturesPage() {
         <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <ResponsiveContainer className="flex h-20 items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="AcePaper Writers Logo"
-                width={80}
-                height={80}
-                className="w-14 h-14 sm:w-16 sm:h-16"
-                priority
-              />
-              <div className="flex flex-col">
-                <span className="text-lg sm:text-xl font-bold leading-tight">
-                  <span className="text-orange-500">AcePaper</span>
-                  <span className="text-teal-900">Writers</span>
-                </span>
-                <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+              <div className="flex items-center gap-2">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-500 to-teal-900 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg sm:text-xl">AW</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-lg sm:text-xl font-bold leading-tight">
+                    <span className="text-orange-500">AcePaper</span>
+                    <span className="text-teal-900">Writers</span>
+                  </span>
+                  <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">
+                    We Write. You Excel.
+                  </span>
+                </div>
               </div>
             </Link>
 
@@ -275,12 +277,8 @@ export default function FeaturesPage() {
                   </div>
                 </div>
               </div>
-            </ResponsiveContainer>
-          </section>
 
-          {/* Additional Benefits */}
-          <section className="py-12 sm:py-16 bg-gray-50">
-            <ResponsiveContainer>
+              {/* Additional Benefits */}
               <div className="text-center mb-12">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-teal-900">Additional Benefits</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
@@ -421,26 +419,36 @@ export default function FeaturesPage() {
           {/* CTA Section */}
           <section className="py-12 sm:py-16 bg-gradient-to-r from-teal-900 to-teal-800 text-white">
             <ResponsiveContainer className="text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Ready to Experience Excellence?</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Ready to Get Started?</h2>
               <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Join thousands of satisfied clients and discover why AcePaper Writers is the trusted choice for academic
                 success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/order">
-                  <Button size="lg" className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600">
+                  <Button size="lg" className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white">
                     Place an Order Now
                   </Button>
                 </Link>
-                <Link href="/pricing">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full sm:w-auto border-white text-white hover:bg-white/10"
-                  >
-                    View Pricing <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="w-full sm:w-auto border-white text-white hover:bg-white/10"
+                        asChild
+                      >
+                        <Link href="/features">
+                          Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Explore all our features</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </ResponsiveContainer>
           </section>
@@ -451,7 +459,9 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-teal-900 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">AW</span>
+                  </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold leading-tight">
                       <span className="text-orange-500">AcePaper</span>
@@ -476,7 +486,7 @@ export default function FeaturesPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#how-it-works" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="#how-it-works" className="text-gray-600 hover:text-orange-500 text-sm">
                       How It Works
                     </Link>
                   </li>

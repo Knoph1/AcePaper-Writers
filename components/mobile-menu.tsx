@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
+// import Image from "next/image" - Remove this line
 
 interface MobileMenuProps {
   links: {
@@ -62,13 +62,17 @@ export function MobileMenu({ links }: MobileMenuProps) {
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8 p-4">
           <div className="flex items-center gap-2">
-            <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-teal-600">
+              <span className="text-white font-bold text-xl">AW</span>
+            </div>
             <div className="flex flex-col text-center">
               <span className="text-lg font-bold leading-tight">
                 <span className="text-orange-500">AcePaper</span>
-                <span className="text-teal-900">Writers</span>
+                <span className="text-teal-900 dark:text-teal-500">Writers</span>
               </span>
-              <span className="text-xs text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+              <span className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-tight">
+                We Write. You Excel.
+              </span>
             </div>
           </div>
           {links.map((link) => (

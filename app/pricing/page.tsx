@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Check, ArrowRight } from "lucide-react"
 import { ResponsiveContainer } from "@/components/responsive-container"
@@ -99,20 +98,19 @@ export default function PricingPage() {
         <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <ResponsiveContainer className="flex h-20 items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="AcePaper Writers Logo"
-                width={80}
-                height={80}
-                className="w-14 h-14 sm:w-16 sm:h-16"
-                priority
-              />
-              <div className="flex flex-col">
-                <span className="text-lg sm:text-xl font-bold leading-tight">
-                  <span className="text-orange-500">AcePaper</span>
-                  <span className="text-teal-900">Writers</span>
-                </span>
-                <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">We Write. You Excel.</span>
+              <div className="flex items-center gap-2">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-500 to-teal-900 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg sm:text-xl">AW</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-lg sm:text-xl font-bold leading-tight">
+                    <span className="text-orange-500">AcePaper</span>
+                    <span className="text-teal-900">Writers</span>
+                  </span>
+                  <span className="text-xs sm:text-sm text-gray-600 font-medium leading-tight">
+                    We Write. You Excel.
+                  </span>
+                </div>
               </div>
             </Link>
 
@@ -782,7 +780,9 @@ export default function PricingPage() {
             <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Image src="/logo.png" alt="AcePaper Writers Logo" width={60} height={60} className="w-14 h-14" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-teal-900 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">AW</span>
+                  </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold leading-tight">
                       <span className="text-orange-500">AcePaper</span>
@@ -807,7 +807,7 @@ export default function PricingPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#how-it-works" className="text-gray-600 hover:text-orange-500 text-sm">
+                    <Link href="#how-it-works" className="text-gray-600 hover:text-orange-500 text-sm">
                       How It Works
                     </Link>
                   </li>
