@@ -116,7 +116,7 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 font-medium">writerchen95@gmail.com</p>
-                    <p className="text-sm text-gray-600 mt-2">We respond within 2 hours</p>
+                    <p className="text-sm text-gray-600 mt-2">We respond within 10 minutes</p>
                   </CardContent>
                 </Card>
 
