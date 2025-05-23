@@ -599,7 +599,7 @@ export default function PricingPage() {
                       <h3 className="text-2xl font-bold mb-3 text-teal-900">Request a Custom Quote</h3>
                       <p className="text-gray-600 max-w-md mx-auto">
                         Our team will analyze your requirements and provide a tailored quote within{" "}
-                        <span className="font-semibold text-orange-600">2 hours</span>.
+                        <span className="font-semibold text-orange-600">10 minutes</span>.
                       </p>
                     </div>
 
@@ -656,7 +656,7 @@ export default function PricingPage() {
 
                     <div className="mt-8 text-center text-sm text-gray-500">
                       <p>
-                        Average response time: <span className="font-medium text-teal-700">Under 2 hours</span> •
+                        Average response time: <span className="font-medium text-teal-700">Under 10 minutes</span> •
                         Satisfaction rate: <span className="font-medium text-teal-700">99%</span>
                       </p>
                     </div>
