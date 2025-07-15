@@ -18,8 +18,6 @@ AcePaper Writers is a professional academic and business writing service designe
 3. **Track Progress**: Communicate directly with your writer and monitor the work.
 4. **Receive & Review**: Get your completed work and request revisions if needed.
 
-//v0-ace-paper-writers.vercel
-
 ## Pricing
 
 AcePaper Writers offers transparent pricing based on academic level:
